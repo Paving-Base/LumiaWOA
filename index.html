@@ -123,7 +123,7 @@
         <r-grid columns=2 class="wrapper" style="grid-column: full;">
             <r-cell span=1 span-s=row class="vertical-center">
                 <h1 style="margin: 0"><i class="ms-Icon ms-Icon--CellPhone" aria-hidden="true"></i></h1>
-                <h2>”移动扭曲“</h2>
+                <h2>融合 Win10 Mobile</h2>
                 <div>
                     <p>MobileShell 是一个功能齐全的自适应 Shell，旨在模仿 Windows 10 Mobile 的外观。</p>
                     <p>MobileShell 带回了导航栏、状态栏，将通知栏放在顶部，状态图标一目了然，并且仅在你的手机处于平板电脑模式时激活（平板电脑模式仅限 Windows 10）。</p>
@@ -174,11 +174,8 @@
                     <h1 style="margin: 0"><i class="ms-Icon ms-Icon--Phone" aria-hidden="true"></i></h1>
                     <h2>打个招呼...<sup style="font-size: 12px; font-weight: 400;">3</sup></h2>
                     <div>
-                        <p>This project backports the cellular stack from Windows 10 Mobile to Windows desktop. On
-                            supported versions of Windows, you can make calls, texts, and browse the internet using a
-                            cellular connection.</p>
-                        <p>Dialer (previously WOA Dialer) is our custom app that allows you to make and manage calls on your device. 
-                            Dialer is bundled with the project by default, along with the classic Microsoft Phone app.</p>
+                        <p>此项目将蜂窝网络堆栈从 Windows 10 Mobile 移植到了桌面版 Windows。 在受支持的 Windows 版本上，您可以使用蜂窝网络连接拨打电话、发送短信和浏览互联网。</p>
+                        <p>Dialer (原名 WOA Dialer) 是我们的自制应用，可让您在设备上拨打和管理电话。 默认情况下，Dialer 与经典的 Microsoft Phone 应用程序一起与项目捆绑在一起。</p>
                     </div>
                     <div>
                         <a class="button" href='https://github.com/WOA-Project/woadialer'>View Dialer on GitHub</a>
@@ -219,10 +216,9 @@
                 <r-cell span-s=row class="vertical-center">
                     <h1 style="margin: 0"><i class="ms-Icon ms-Icon--Message" aria-hidden="true"></i></h1>
                     <h2>...或者发条短信<sup style="font-size: 12px; font-weight: 400;">3</sup></h2>
-                    <p>With the Chat application, you can recieve and send SMS messages. MMS messages remain unsupported
-                        as of now.</p>
+                    <p>使用 Chat 应用程序，您可以接收和发送短信，目前彩信仍然不受支持。</p>
                     <div>
-                        <a class="button" href='https://github.com/WOA-Project/Chat'>View Chat on GitHub</a>
+                        <a class="button" href='https://github.com/WOA-Project/Chat'>在 GitHub 上查看 Chat</a>
                     </div>
                 </r-cell>
             </r-grid>
@@ -233,8 +229,7 @@
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>WOA Deployer</h4>
-                <p>WOA Deployer allows you to deploy with ease Windows Desktop to your device, and enabling Dual Boot
-                    with 2 clicks. You can pick the windows release you want, the language you want.</p>
+                <p>WOA Deployer 能让你轻松地将桌面版 Windows 部署到你的设备，并通过单击 2 次启用双启动。你可以选择你想要的 Windows 版本和语言。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/WOA-Deployer-Lumia">View on GitHub</a>
             </r-cell>
             <r-cell span-s=row>
@@ -327,18 +322,15 @@
             </r-cell>
         </r-grid>
         <div class="wrapper" style="grid-column: full;">
-            <p class="caption secondary"><sup>1</sup> Applications compiled for the AMD64/x86-64 architecture are 
-                supported only on build 21277+.</p>
-            <p class="caption secondary"><sup>2</sup> Continuum currently only works wirelessly over Miracast.</p>
-            <p class="caption secondary"><sup>3</sup> Cellular support is still unfinished and might be broken in some
-                areas. Cellular calls are automatically enabled in up to Windows 10 November 2019 Update (version 19H2, build
-                18363). Versions higher than this will <strong>only</strong> support cellular data. You can manually enable 
-                calls on builds higher than 18363 by using [this guide]. SMS are supported up to Windows 10 November 2019 Update 
-                (version 19H2, build 18363). Dual SIM devices may have issues fetching the default Carrier APN settings, a provisioning 
-                package for APN may be required. The advanced settings page for Cellular in the Windows Settings app may crash. 
-                Your experience will vary between carries and devices. This software stack has not been approved for use with emergency services.
-                As a consequence <strong>it should not be used as your primary way of communication</strong>. VoLTE (IMS) stack while
-                present is not functional.</p>
+            <p class="caption secondary"><sup>1</sup> 为 AMD64/x86-64 架构编译的应用程序仅在 build 21277 或更高版本上获得支持。</p>
+            <p class="caption secondary"><sup>2</sup> Continuum 目前仅可通过 Miracast 无线连接。</p>
+            <p class="caption secondary"><sup>3</sup> 移动网络支持仍未完工，可能在部分地区不可用。
+                通话功能可在 Windows 10 2019 年 11 月更新 （版本 1909, build 18363）及更低版本上自动启用。更高版本将 <strong>仅支持</strong> 移动数据。 你可以在高于 18363 的版本上手动启用通话功能。
+                短信功能仅支持 Windows 10 2019 年 11 月更新（版本 1909, build 18363)及更低版本。双 SIM 卡设备在获取默认运营商 APN 设置时可能会遇到问题，可能需要一个 APN 配置包。
+                Windows 设置中蜂窝网络的高级设置页面可能会崩溃。
+                体验会因网络运营商和设备而异，此软件堆栈尚未获准用于紧急服务。
+                因此， <strong>不应将其用作您的主要通讯设备</strong>。
+                VoLTE不可用。</p>
         </div>
     </main>
 
@@ -346,11 +338,11 @@
     <footer>
         <div class="wrapper caption secondary">
             <p>© 2017-2021 Lumia WOA 项目作者</p>
-            <p>Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo,
-                Windows, Lumia, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft
-                Corporation in the United States. Miracast is a registered trademark of the Wi-Fi Alliance. Other
-                binaries may be copyright Qualcomm Incorporated and Microsoft Mobile.</p>
-            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. Site built by @itsmichaelwest.</p>
+            <p>Snapdragon 是高通公司的注册商标。 
+                Microsoft、Microsoft Corporate 徽标、Windows、Lumia、Windows Hello、Continuum、Hyper-V 和 DirectX 是 Microsoft Corporation 在美国的注册商标。 
+                Miracast 是 Wi-Fi 联盟的注册商标。 
+                其他二进制文件可能是 Qualcomm Incorporated 和 Microsoft Mobile 的版权。</p>
+            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. 此页面由 @itsmichaelwest 创建，由 @djq060912 翻译为简体中文。</p>
         </div>
     </footer>
 
