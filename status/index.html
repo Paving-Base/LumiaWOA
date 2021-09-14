@@ -85,13 +85,13 @@
                 <h3 style="margin: 0;">总进度<span class="codename"></span></h3>
             </r-cell>
             <r-cell class="vertical-center">
-                <h5 class="text-right" style="margin: 0;">91%</h5>
+                <h5 class="text-right" style="margin: 0;">92%</h5>
             </r-cell>
         </r-grid>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"
-                 style="width: 91%; top: -13px">
-                <span class="sr-only">91%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 92%; top: -13px">
+                <span class="sr-only">92%</span>
             </div>
         </div>
 
@@ -107,6 +107,10 @@
                 <tr>
                     <td>SD 卡启动能力<span class="badge">UEFI</span></td>
                     <td class="text-right">Lumia 950 / Lumia 950 XL / RX-130</td>
+                </tr>
+                <tr>
+                    <td>适用于 QC8992 的处理器管理支持<span class="badge">驱动</span></td>
+                    <td class="text-right">Lumia 950</td>
                 </tr>
             </tbody>
         </table>
@@ -287,7 +291,7 @@
                     <td>GPU</td>
                     <td>目前只有 ARM64，ARM32 应用的 DirectX 支持</td>
                     <td class="text-right">
-                        部分工作（在低于 20200 的系统上可能遇到透明部分显示问题）
+                        部分工作（在系统版本低于 20200 的系统上可能遇到透明部分显示问题）
                     </td>
                     <td>
                         <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -324,13 +328,13 @@
                 <h3 style="margin: 0;">Lumia 950<span class="codename">Talkman</span></h3>
             </r-cell>
             <r-cell class="vertical-center">
-                <h5 class="text-right" style="margin: 0;">89%</h5>
+                <h5 class="text-right" style="margin: 0;">91%</h5>
             </r-cell>
         </r-grid>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"
-                 style="width: 89%; top: -13px">
-                <span class="sr-only">89%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 91%; top: -13px">
+                <span class="sr-only">91%</span>
             </div>
         </div>
         <table>
@@ -476,10 +480,10 @@
                     <td>SoC 核心</td>
                     <td>全部 6 个核心（包括 A53 和 A57）</td>
                     <td class="text-right">
-                        部分工作（处理器管理不工作 — 只有 4 个 A53 核心工作，且锁定在 763Mhz)
+                        正常工作（适用于 Lumia 950 的处理器管理驱动正在测试）
                     </td>
                     <td>
-                        <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
                     </td>
                 </tr>
                 <tr>
@@ -498,7 +502,7 @@
                     <td>GPU</td>
                     <td>目前只有 ARM64，ARM32 应用的 DirectX 支持</td>
                     <td class="text-right">
-                        部分工作（在低于 20200 的系统上可能遇到透明部分显示问题）
+                        部分工作（在系统版本低于 20200 的系统上可能遇到透明部分显示问题）
                     </td>
                     <td>
                         <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -556,165 +560,121 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Wireless</td>
-                        <td>Wi-Fi 2.4GHz and 5GHz</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Touch</td>
-                        <td>10 fingers maximum, right click support</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>GPS</td>
-                        <td>Requires an internet connection to download maps data on first run</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Miracast</td>
-                        <td>Receiving content, projecting content</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Bluetooth</td>
-                        <td>Random disconnections may happen, Windows issue</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>NFC</td>
-                        <td>Reading, writing</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>SD Card slot</td>
-                        <td>Max speed: HS400</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>eMMC</td>
-                        <td>All brands including Samsung</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Battery</td>
-                        <td>Charging, readings</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Side buttons</td>
-                        <td>Volume control, lock/unlock/power off, camera</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>SoC Cores</td>
-                        <td>All 8 cores (A53 and A57)</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Display panel</td>
-                        <td>Brightness control, color accuracy</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Audio</td>
-                        <td>Speakers, microphones</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Sensors</td>
-                        <td>Gyrometer, accelerometer, ambient light sensor</td>
-                        <td class="text-right">Working</td>
-                        <td>
-                            <span class="state working">
-                                <i class="ms-Icon ms-Icon--CheckMark"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
+                    <td>无线网络</td>
+                    <td>Wi-Fi 2.4GHz 和 5GHz</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>触摸</td>
+                    <td>最多 10 点，右键支持。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GPS</td>
+                    <td>首次运行时需要互联网连接以下载地图数据。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Miracast</td>
+                    <td>接收，投射内容</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>蓝牙</td>
+                    <td>由于 Windows 的问题，可能出现随机断连。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>NFC</td>
+                    <td>读取，写入。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SD 卡槽</td>
+                    <td>最大速度：HS400</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>eMMC</td>
+                    <td>所有品牌，包括三星。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>电池</td>
+                    <td>充电，获取电池信息。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>侧边按钮</td>
+                    <td>音量控制，锁屏/解锁/关机，相机键</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SoC 核心</td>
+                    <td>全部 8 个核心（包括 A53 和 A57）</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>显示面板</td>
+                    <td>亮度控制，色彩准确度。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>声音</td>
+                    <td>扬声器，耳机。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>传感器</td>
+                    <td>陀螺仪、加速度计、环境光传感器。</td>
+                    <td class="text-right">正常工作</td>
+                    <td>
+                        <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
                     <tr>
                         <td>Modern standby</td>
-                        <td>S0 low power idle network connected state</td>
-                        <td class="text-right">
-                            Working
-                        </td>
+                        <td>S0 低功耗空闲网络连接状态</td>
+                        <td class="text-right">正常工作</td>
                         <td>
                             <span class="state working">
                                 <i class="ms-Icon ms-Icon--CheckMark"
@@ -724,9 +684,9 @@
                     </tr>
                     <tr>
                         <td>USB</td>
-                        <td>Plug detection, USB host/guest</td>
+                        <td>插入检测，USB 主/从模式。</td>
                         <td class="text-right">
-                            Partially working (driver only works on Windows 10 build 17134 and lower)
+                            部分工作（驱动仅在 Windows 10 build 17134 及更低版本工作）
                         </td>
                         <td>
                             <span class="state warning">
@@ -736,58 +696,51 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Cellular</td>
-                        <td>
-                            EDGE, GSM, CDMA, HSDPA, LTE. No VoLTE support. Calls, SMS and cellular data fully working on
-                            Windows 10 build 18363 and lower. For newer versions, cellular data works but can be tricky
-                            to activate. Calls require additional setup. Dual SIM devices may require an APN to be specified.
-                        </td>
-                        <td class="text-right">Partially working</td>
-                        <td>
-                            <span class="state warning">
-                                <i class="ms-Icon ms-Icon--Warning"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>GPU</td>
-                        <td>ARM64, ARM32 DirectX support only for now</td>
-                        <td class="text-right">
-                            Partially working (artifacts may show up due to exceptions thrown in the
-                            DirectX User Mode compilers in builds lower than 20200)
-                        </td>
-                        <td>
-                            <span class="state warning">
-                                <i class="ms-Icon ms-Icon--Warning"
-                                   aria-hidden="true"></i>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Cameras</td>
-                        <td>No drivers</td>
-                        <td class="text-right">Not working</td>
-                        <td>
-                            <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Windows Hello fingerprint unlock</td>
-                        <td>No drivers</td>
-                        <td class="text-right">Not working</td>
-                        <td>
-                            <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hyper-V</td>
-                        <td>No firmware support</td>
-                        <td class="text-right">Not working</td>
-                        <td>
-                            <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
-                        </td>
-                    </tr>
+                    <td>移动数据</td>
+                    <td>
+                        EDGE, GSM, CDMA, HSDPA, LTE. 没有 VoLTE 支持。电话，短信和移动数据仅在
+                        Windows 10 build 18363 及更低版本完整工作。 对于较新的版本，蜂窝数据正常工作，
+                        但可能会遇到激活问题。电话需要额外的设置。 双 SIM 卡设备可能需要指定 APN。
+                    </td>
+                    <td class="text-right">部分工作</td>
+                    <td>
+                        <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>目前只有 ARM64，ARM32 应用的 DirectX 支持</td>
+                    <td class="text-right">
+                        部分工作（在系统版本低于 20200 的系统上可能遇到透明部分显示问题）
+                    </td>
+                    <td>
+                        <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>相机</td>
+                    <td>没有驱动</td>
+                    <td class="text-right">不工作，我们无能为力。</td>
+                    <td>
+                        <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Windows Hello 面部解锁</td>
+                    <td>没有驱动（需要相机正常工作）</td>
+                    <td class="text-right">不工作，我们无能为力。</td>
+                    <td>
+                        <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hyper-V</td>
+                    <td>没有固件支持</td>
+                    <td class="text-right">不工作，我们无能为力。</td>
+                    <td>
+                        <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -804,8 +757,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Windows 10 版本 16299 (1709)</td>
-                        <td>不支持，存在严重问题。</td>
+                        <td>Windows 10 build 16299 (1709)</td>
+                        <td>不支持，存在严重驱动问题。</td>
                         <td>
                             <td>
                                 <span class="state error"><i class="ms-Icon ms-Icon--Blocked" aria-hidden="true"></i></span>
@@ -813,8 +766,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 17134 (1803)</td>
-                        <td>不支持，存在小问题，不再活跃维护。</td>
+                        <td>Windows 10 build 17134 (1803)</td>
+                        <td>部分支持，存在小问题，不再活跃维护。</td>
                         <td>
                             <td>
                                 <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -822,8 +775,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 17763 (1809)</td>
-                        <td>不支持，存在小问题，不再活跃维护。</td>
+                        <td>Windows 10 build 17763 (1809)</td>
+                        <td>部分支持，存在小问题，不再活跃维护。</td>
                         <td>
                             <td>
                                 <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -831,8 +784,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 18362 (1903)</td>
-                        <td>不支持，存在小问题，不再活跃维护。</td>
+                        <td>Windows 10 build 18362 (1903)</td>
+                        <td>部分支持，存在小问题，不再活跃维护。</td>
                         <td>
                             <td>
                                 <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -840,8 +793,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 18363 (1909)</td>
-                        <td>不支持，存在小问题，不再活跃维护。</td>
+                        <td>Windows 10 build 18363 (1909)</td>
+                        <td>部分支持，存在小问题，不再活跃维护。</td>
                         <td>
                             <td>
                                 <span class="state warning"><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i></span>
@@ -849,8 +802,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 19041 (2004)</td>
-                        <td>完全支持，存在已知问题但没有影响，活跃维护中。</td>
+                        <td>Windows 10 build 19041 (2004)</td>
+                        <td>完全支持，活跃维护中。</td>
                         <td>
                             <td>
                                 <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
@@ -858,8 +811,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 19042 (20h2)</td>
-                        <td>完全支持，存在已知问题但没有影响，活跃维护中。</td>
+                        <td>Windows 10 build 19042 (20h2)</td>
+                        <td>完全支持，活跃维护中。</td>
                         <td>
                             <td>
                                 <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
@@ -867,8 +820,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 19043 (21h1)</td>
-                        <td>完全支持，存在已知问题但没有影响，活跃维护中。</td>
+                        <td>Windows 10 build 19043 (21h1)</td>
+                        <td>完全支持，活跃维护中。</td>
                         <td>
                             <td>
                                 <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
@@ -876,8 +829,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 10 版本 19044 (21h2)</td>
-                        <td>完全支持，存在已知问题但没有影响，活跃维护中。</td>
+                        <td>Windows 10 build 19044 (21h2)</td>
+                        <td>完全支持，活跃维护中。</td>
                         <td>
                             <td>
                                 <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
@@ -885,8 +838,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Windows 11 版本 22000 (21h2)</td>
-                        <td>完全支持，存在已知问题但没有影响，活跃维护中。</td>
+                        <td>Windows 11 build 22000 (21h2)</td>
+                        <td>完全支持，活跃维护中。</td>
                         <td>
                             <td>
                                 <span class="state working"><i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i></span>
