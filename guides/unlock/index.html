@@ -5,17 +5,17 @@
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Unlock the Bootloader - Lumia WOA Project</title>
+    <title>解锁 Bootloader - Lumia WOA 项目</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/raster.grid.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/style.min.css" />
-    <meta name="description" content="This guide will explain the first step into the world of Lumia modding.">
-    <link rel="canonical" href="https://woa-project.github.io/LumiaWOA/">
-    <meta property="og:title" content="Unlock the Bootloader - Lumia WOA Project" />
-    <meta property="og:description" content="This guide will explain the first step into the world of Lumia modding." />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/raster.grid.css" />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/style.min.css" />
+    <meta name="description" content="本教程将介绍打开 Lumia 自定义大门的第一步。">
+    <link rel="canonical" href="https://paving-base.github.io/LumiaWOA/">
+    <meta property="og:title" content="解锁 Bootloader - Lumia WOA 项目" />
+    <meta property="og:description" content="本教程将介绍打开 Lumia 自定义大门的第一步。" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://woa-project.github.io/LumiaWOA/" />
+    <meta property="og:url" content="https://paving-base.github.io/LumiaWOA/" />
 
 
 </head>
@@ -24,25 +24,23 @@
 
     <nav id="navbar">
         <div class="wrapper">
-            <a href="https://woa-project.github.io/LumiaWOA/" aria-label="Homepage">
-                Lumia WOA Project
+            <a href="https://paving-base.github.io/LumiaWOA/" aria-label="Homepage">
+                Lumia WOA 项目
             </a>
             <div class="nav-links">
 
 
-                <a href="https://woa-project.github.io/LumiaWOA/">Home</a>
+                <a href="https://paving-base.github.io/LumiaWOA/">主页</a>
 
-                <a class="active" href="https://woa-project.github.io/LumiaWOA/guides/">Guides</a>
+                <a class="active" href="https://paving-base.github.io/LumiaWOA/guides/">教程</a>
 
-                
+                <a href="https://paving-base.github.io/LumiaWOA/status/">状态</a>
 
-                <a href="https://woa-project.github.io/LumiaWOA/status/">Status</a>
+                <a href="https://woaproject.net/">论坛</a>
 
-                <a href="https://woaproject.net/">Forum</a>
+                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">群组</a>
 
-                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">Group</a>
-
-                <a href="https://t.me/LumiaWOA_Announcements">Channel</a>
+                <a href="https://t.me/LumiaWOA_Announcements">频道</a>
             </div>
         </div>
     </nav>
@@ -52,56 +50,51 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>Unlocking the Bootloader</h1>
-                <h4 class="secondary">This guide will explain the first step into the world of Lumia modding.</h4>
+                <h1>解锁 Bootloader</h1>
+                <h4 class="secondary">本教程将介绍打开 Lumia 自定义大门的第一步。</h4>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
             <div class="wrapper">
-                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
-                <h6>Bricks can happen</h6>
-                <p>This guide is an explaination of the correct steps to follow. Errors may still happen, both caused by 
-                    the user or by unpredictable conditions on your work machine. We're not resposible for any data loss,
-                    soft bricks or permanent damage on the device.</p>
-                <p>The firmware provided is for testing purposes only. We aren't responsible for any data loss caused by
-                    the firmware images. Make backups of your data prior to installing.</p>
-                <p><strong>This software has not been approved for use with emergency services. By installing this
-                    software, you agree to not use it as your primary phone device due to possible disruption in
-                    emergency service access.</strong></p>
+                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>警告</h3>
+                <h6>可能导致设备损坏</h6>
+                <p>本教程会演示正确步骤，但错误仍可能因用户机器上不可预测的情况而发生。我们不对设备的任何数据丢失，软砖或永久性损坏负责。</p>
+                <p>提供的固件仅用于测试目的，我们不对固件引起的任何数据丢失负责。请一定在安装之前备份好你的数据。</p>
+                <p><strong>该软件未被批准用于紧急服务。通过安装此软件，您同意可能出现的紧急服务访问中断。请不要将其作为你的主要通讯设备。</strong></p>
             </div>
         </div>
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>Prerequisites</h2>
+                    <h2>先决条件</h2>
                     <ul>
-                        <li>Lumia 950 (Talkman) or Lumia 950 XL (Cityman)</li>
-                        <li>A Windows PC</li>
-                        <li>A cable to connect the phone to the PC</li>
+                        <li>一台 Lumia 950 (Talkman) 或者 Lumia 950 XL (Cityman)</li>
+                        <li>一台 Windows 电脑</li>
+                        <li>一根数据线</li>
                     </ul>
-                    <p>Software:</p>
+                    <p>软件：</p>
                     <ul>
                         <li><a href="https://github.com/ReneLergner/WPinternals/releases/latest">WPInternals</a></li>
                     </ul>
                     <p>
-                        And a lot of patience!
+                        以及充足的耐心！
                     </p>
                     <p> <b>
-                        Please read the entire guide before starting the process. The unlocking procedure involves
-                        a lot of different variables, so some steps might differ from phone to phone. It might be 
-                        needed to try a few times.
+                        请在开始操作之前完整阅读教程。
+                        解锁过程涉及许多不同的变量，因此某些步骤可能会有所不同。
+                        可能需要多次尝试。
                     </b> </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/phone_unlock.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/phone_unlock.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/phone_unlock.png" alt="Vectorial phone with an unlock symbol" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/phone_unlock.png" alt="Vectorial phone with an unlock symbol" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/phone_unlock.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/phone_unlock.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -109,35 +102,32 @@
             </r-grid>
         </div>
         <div class="hero-sect">
-            <h2>Before starting...</h2>
+            <h2>在开始前...</h2>
             <p style="margin-bottom: 40px;">
-                If you plan on keeping Windows 10 Mobile alongside Windows On ARM, make sure to fully update your 
-                phone before following this procedure. In fact, you 
-                <strong>can't update your Windows Mobile installation while the bootloader is unlocked.</strong>
+                如果你想保留 Windows 10 Mobile 并与 Windows On ARM 形成双系统，请确保你已经在解锁前将系统更新到最新版本。
+                <strong>解锁 Bootloader 后，你将无法更新 Windows 10 Mobile！</strong>
             </p>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        <h2>Let's begin!</h2>
-                        Let's start by downloading WPInternals. Save it somewhere on your PC, then extract it. 
-                        You might need to disable your antivirus, because it might be flagged as a false positive.
+                        <h2>让我们开始吧！</h2>
+                        让我们从下载 WPinternals 开始吧。将文件保存到你电脑上的任意位置，并解压。
+                        你可能需要禁用杀毒软件，因为其可能会误报。
                     </p>
                     <p>
-                        Run WPInternals, and you will be greeted by the Getting Started screen. Please take your time
-                        to read through the page. You will be instructed to install dome drivers needed for WPInternals
-                        to work. 
+                        运行 WPInternals，你会看到 Getting Started 页面，请仔细阅读，它会告诉你如何安装必要的驱动（通过安装 Windows Device Recovery Tool）。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpinternals_welcome.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpinternals_welcome.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpinternals_welcome.png" alt="The WPInternals tool Welcome Page" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpinternals_welcome.png" alt="The WPInternals tool Welcome Page" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpinternals_welcome.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpinternals_welcome.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -146,27 +136,26 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Plug your phone to your PC, and WPInternals should detect it. (This is pictured in this step).
-                        This might look a bit different if your phone is not booted into Windows Phone, but don't worry.
+                        将手机连接到电脑，WPInternals 应该可以自动识别（如图所示）。
+                        显示信息可能有所不同，无须担心。
                     </p>
                     <p>
-                        You'll need a few files for this to work, including the original FFU file for your model.
+                        你需要一些解锁时所需的文件，包括适用于你的设备的 FFU 系统镜像文件。
                     </p>
                     <p>
-                        In case you haven't done this before or miss those files, go into the "Download" tab and 
-                        press the "Download All" button. this will download every file needed for your device. 
+                        如果你没有下载过或者丢失了部分文件，可前往“Download”选项卡并点击"Download All" 按钮，它会为你下载适用于你的设备的所有文件。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_phone_details_2.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_phone_details_2.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_phone_details_2.png" alt="The WPInternals device info page" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_phone_details_2.png" alt="The WPInternals device info page" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_phone_details_2.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_phone_details_2.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -175,20 +164,20 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Click "Unlock Bootloader" on the left. WPInternals will ask you to reboot to flash mode, 
-                        if you aren't already in it. Press OK to confirm.
+                        准备完毕后，点击左侧的"Unlock Bootloader"。WPInternals 可能会提示你重启到 Flash Mode（如果你的手机在正常模式的话）。
+                        点击“OK”以确定。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.png" alt="WPInternals asking to go to flash mode" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.png" alt="WPInternals asking to go to flash mode" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_flashmode_needed.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -197,22 +186,21 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        You'll see this page. Please take your time read through it. Go to the end of the page,
-                        and press the unlock button. If this button isn't enabled, you should still select the 
-                        correct FFU and EDE files. If you don't have them, please go to the Download section and 
-                        download them, then come back here.
+                        你会看到此页面，请花点时间阅读一下。之后，转到页面末尾并点击“Unlock”按钮。
+                        如果按钮无法点击，则需要手动选择正确的 FFU 和 EDE 文件。
+                        如果你还没有下载有关文件，请参照前面的教程下载。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock.png" alt="The WPInternals unlock page" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock.png" alt="The WPInternals unlock page" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -221,19 +209,18 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Follow the instructions that keep appearing, in case they do, and then...
-                    </p>
+                        耐心等待，并遵照屏幕上出现的提示操作，然后...
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlocking.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlocking.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlocking.png" alt="WPInternals unlocking the bootloader" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlocking.png" alt="WPInternals unlocking the bootloader" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlocking.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlocking.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -243,21 +230,21 @@
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>We're done!</h2>
+                    <h2>完成！</h2>
                     <p>
-                        Your phone will now boot back to Windows Phone. You can also unplug it from the PC if needed now.
+                        你的手机现在会正常重启到 Windows Phone。如有需要，你也可以断开与电脑的连接。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock_done.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock_done.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock_done.png" alt="WPInternals completed the unlock procedure" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock_done.png" alt="WPInternals completed the unlock procedure" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_unlock_done.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_unlock_done.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -265,48 +252,46 @@
             </r-grid>
         </div>
         <div class="hero-sect">
-            <h2>What's next?</h2>
+            <h2>接下来的操作？</h2>
             <p>
-                You have 2 options now, in case you want to install WOA.
+                 如果你要安装 WOA，下面有两个方式。
             </p>
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <a href="https://woa-project.github.io/LumiaWOA/guides/flashffu/" style="color: white; text-decoration: none;">
+                    <a href="https://paving-base.github.io/LumiaWOA/guides/flashffu/" style="color: white; text-decoration: none;">
                         <figure>
                             <div class="img-wrapper" style="padding-bottom: 75%;">
                                 <picture>
                                     <img class="lazyload img-fluid" loading="lazy"
-                                        src="https://woa-project.github.io/LumiaWOA/img/terminal.png" alt="FFU Flashing hero image" />
+                                        src="https://paving-base.github.io/LumiaWOA/img/terminal.png" alt="FFU Flashing hero image" />
                                 </picture>
-                                <noscript><img src="https://woa-project.github.io/LumiaWOA/img/terminal.png"
+                                <noscript><img src="https://paving-base.github.io/LumiaWOA/img/terminal.png"
                                         class="img-fluid" /></noscript>
                             </div>
                         </figure>
-                        <h3>FFU Flashing</h3>
+                        <h3>刷入 FFU</h3>
                         <p>
-                            Download an already made FFU and flash it using thor2. This is a fast solution, but
-                            requires some terminal knowledge. You can't use dual boot with this solution.
+                            下载预先制作好的 FFU 文件并通过 thor2 刷入。此方法较为快捷，但需要有一定的命令行知识，且不支持双启动。
                         </p>
                     </a>
                 </r-cell>
                 <r-cell span-s=row>
-                    <a href="https://woa-project.github.io/LumiaWOA/guides/woadeployer/" style="color: white; text-decoration: none;">
+                    <a href="https://paving-base.github.io/LumiaWOA/guides/woadeployer/" style="color: white; text-decoration: none;">
                         <figure>
                             <div class="img-wrapper" style="padding-bottom: 75%;">
                                 <picture>
-                                    <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.webp"
+                                    <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.webp"
                                         type="image/webp" />
                                     <img class="lazyload img-fluid" loading="lazy"
-                                        src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png" alt="WoaDeployer hero image" />
+                                        src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png" alt="WoaDeployer hero image" />
                                 </picture>
-                                <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png"
+                                <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png"
                                         class="img-fluid" /></noscript>
                             </div>
                         </figure>
-                        <h3>WoaDeployer</h3>
+                        <h3>使用 WoaDeployer</h3>
                         <p>
-                            Use your own Windows ISO, and let the tool automatically do every step needed. If you 
-                            want to keep Windows 10 Mobile in dual boot, you're forced to use this method.
+                            使用你自己的 Windows ISO 镜像文件，并让此工具自动完成全部步骤。如果你想保留 Windows 10 Mobile 并形成双启动，必须使用此方法。
                         </p>
                     </a>
                 </r-cell>
@@ -317,17 +302,17 @@
 
     <footer>
         <div class="wrapper caption secondary">
-            <p>© 2017-2021 The Lumia WOA Authors</p>
-            <p>Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo,
-                Windows, Lumia, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft
-                Corporation in the United States. Miracast is a registered trademark of the Wi-Fi Alliance. Other
-                binaries may be copyright Qualcomm Incorporated and Microsoft Mobile.</p>
-            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. Site built by @itsmichaelwest.</p>
+            <p>© 2017-2021 Lumia WOA 项目作者</p>
+            <p>Snapdragon 是高通公司的注册商标。 
+                Microsoft、Microsoft Corporate 徽标、Windows、Lumia、Windows Hello、Continuum、Hyper-V 和 DirectX 是 Microsoft Corporation 在美国的注册商标。 
+                Miracast 是 Wi-Fi 联盟的注册商标。 
+                其他二进制文件可能是 Qualcomm Incorporated 和 Microsoft Mobile 的版权。</p>
+            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. 此页面由 @itsmichaelwest 创建，由 @djq060912 翻译为简体中文。</p>
         </div>
     </footer>
 
 
-    <script src="https://woa-project.github.io/LumiaWOA/js/site.min.js"></script>
+    <script src="https://paving-base.github.io/LumiaWOA/js/site.min.js"></script>
 </body>
 
 </html>
