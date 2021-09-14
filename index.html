@@ -105,7 +105,7 @@
             </figure>
             <div class="align-center">
                 <h1 style="margin-top: 2rem;"><i class="ms-Icon ms-Icon--TVMonitor" aria-hidden="true"></i></h1>
-                <h2 style="margin: 2rem 0;">带有 Continuum<sup style="font-size: 12px; font-weight: 400;">2</sup></h2>
+                <h2 style="margin: 2rem 0;">支持 Continuum<sup style="font-size: 12px; font-weight: 400;">2</sup></h2>
                 <figure>
                     <div class="img-wrapper" style="padding-bottom: 62.5%;">
                         <picture>
@@ -159,7 +159,7 @@
                 </figure>
             </r-cell>
             <r-cell span=1 span-s=row class="vertical-center cfh">
-                <p>MobileShell 还支持横向模式，完美适应手机的当前状态。 MobileShell 由@ADeltaX 制作，默认包含在内！ 你也可以从 Microsoft Store 下载：</p>
+                <p>MobileShell 还支持横向模式，完美适应手机的当前状态。 MobileShell 由@ADeltaX 制作，部署时会自动安装。你也可以从 Microsoft Store 下载：</p>
                 <div class="button-group">
                     <a href='//www.microsoft.com/store/apps/9pjjrrfmg383?cid=storebadge&ocid=badge'
                         style="padding-top: 4px;"><img src='https://woa-project.github.io/LumiaWOA/vector/ms_get.svg'
@@ -175,7 +175,7 @@
                     <h2>打个招呼...<sup style="font-size: 12px; font-weight: 400;">3</sup></h2>
                     <div>
                         <p>此项目将蜂窝网络堆栈从 Windows 10 Mobile 移植到了桌面版 Windows。 在受支持的 Windows 版本上，您可以使用蜂窝网络连接拨打电话、发送短信和浏览互联网。</p>
-                        <p>Dialer (原名 WOA Dialer) 是我们的自制应用，可让您在设备上拨打和管理电话。 默认情况下，Dialer 与经典的 Microsoft Phone 应用程序一起与项目捆绑在一起。</p>
+                        <p>Dialer (原名 WOA Dialer) 是我们的自制应用，可让您在设备上拨打和管理电话。Dialer 默认与传统 Microsoft 电话应用一起在部署时自动安装</p>
                     </div>
                     <div>
                         <a class="button" href='https://github.com/WOA-Project/woadialer'>在 GitHub 上查看</a>
@@ -244,68 +244,62 @@
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Lumia Drivers</h4>
-                <p>Lumia Drivers is the repository hosting all driver files for Windows, and INF files which had to be
-                    recreated. Some additional driver patching is also done here to make things work the way they
-                    should.</p>
+                <p>Lumia Driver 是托管 Windows On ARM 所有驱动程序和必须重写的 INF 文件的存储仓库。此处还进行了一些额外的驱动程序修改，以使对应设备正常工作。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/Lumia-Drivers">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Lumia USB-C</h4>
-                <p>Lumia USB-C is the recreation of the USB C driver for Lumia devices. The Lumia 950 USB-C solution is
-                    proprietary and personalized, thus the need for a custom driver.</p>
+                <p>Lumia USB-C 是 Lumia 设备的 USB C 驱动程序的重写版。Lumia 950 USB-C 解决方案较为特殊，因此需要重写驱动程序。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/LumiaUSBC">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Color Profile</h4>
-                <p>Color Profile is the stack managing the personalization of the display color tint, saturation and
-                    contrast.</p>
+                <p>Color Profile 是管理显示颜色色调、饱和度和对比度的堆栈。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/ColorProfile">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Advanced Info</h4>
-                <p>Advanced Info displays information about your device, within the settings app.</p>
+                <p>Advanced Info 会在设置中显示有关你设备的信息。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/AdvancedInfo">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Airwaves</h4>
-                <p>Airwaves allows you to listen to FM radio, right from your phone.</p>
+                <p>Airwaves 能使你在手机上收听 FM 广播。</p>
                 <a class="button primary" href="https://github.com/tigerw/FM-Radio-Frontend">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>RIL Init Service</h4>
-                <p>RIL Init Service allows you to have the Radio Interface Layer initialized on newer versions of
-                    Windows 10/11.</p>
+                <p>RIL Init Service 允许其在较新版本的 Windows 10/11 上初始化 FM 广播接口。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/RILServiceInit">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Auto Brightness Service</h4>
-                <p>The auto brightness service allows you to have automatic brightness on your device.</p>
+                <p>Auto brightness service 可使你的设备支持自动亮度。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/AutoBrightnessSvc">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Auto Rotation Service</h4>
-                <p>The auto rotation service allows you to have automatic rotation on your device.</p>
+                <p>Auto rotation service 可使你的设备支持自动旋转。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/AutoRotate">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Vibrations</h4>
-                <p>The vibration stack allows you to have haptic vibrations once you get a notification, and control the
-                    intensity of the vibration via a settings application.</p>
+                <p>振动堆栈可使设备在收到通知时振动，并可通过设置调整振动强度。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/VibrationSettings">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>USB Function Mode Switcher</h4>
-                <p>USB Function Mode Switcher allows you to switch USB function modes.</p>
+                <p>USB Function Mode Switcher 可使你切换 USB 功能模式。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/USBFunctionModeSwitcher">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Data Management Service</h4>
-                <p>The data management service enables cellular data connections automatically.</p>
+                <p>Data management service 可自动启用蜂窝网络连接。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/DataManagementSvc">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
                 <h4><i class="ms-Icon smdl2" aria-hidden="true"></i>Power Supply Notifier</h4>
-                <p>当您的设备开始充电时，Power Supply Notifier 会播放声音。</p>
+                <p>设备开始充电时，Power Supply Notifier 会播放提示音。</p>
                 <a class="button primary" href="https://github.com/WOA-Project/PowerSupplyNotifier">在 GitHub 上查看</a>
             </r-cell>
             <r-cell span-s=row>
