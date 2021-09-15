@@ -499,6 +499,9 @@ span.state > i.ms-Icon {
         color: #A80000;
         background-color: #FDE7E9;
     }
+    p {
+        color: black;
+    }
 }
 
 /*** Dark Mode ***/
@@ -626,5 +629,8 @@ span.state > i.ms-Icon {
     .state.error {
         background-color: #A80000;
         color: #FDE7E9;
+    }
+    p {
+        color: white;
     }
 }
