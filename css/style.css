@@ -370,148 +370,12 @@ span.state {
 span.state > i.ms-Icon {
     margin: 0 2px;
 }
-
-/*** Light Mode ***/
-@media (prefers-color-scheme: light) {
-    html {
-        background-color: #FFF;
-        color: #323130;
-    }
-
-    .secondary { 
-        color: #605E5C;
-    }
-
-    a {
-        color: #0078D4;
-    }
-
-    a:hover {
-        color: #106EBE;
-    }
-
-    footer {
-        background-color: #F3F2F1;
-    }
-
-    @supports (backdrop-filter: blur(30px) saturate(125%)) or (-webkit-backdrop-filter: blur(30px) saturate(125%)) {
-        nav.scrolled {
-            background-color: rgba(255,255,255,.9);
-        }
-    }
-
-    nav > .wrapper > .nav-links > a {
-        color: #605E5C;
-    }
-
-    nav > .wrapper > .nav-links > a.active {
-        border-bottom: 2px solid #0078D4;
-        font-weight: 600;
-        color: #323130;
-    }
-
-    nav > .wrapper > .nav-links > a:hover {
-        border-bottom: 2px solid #0078D4;
-        background-color: rgba(0,0,0,.1);
-        color: #323130;
-    }
-
-    .button {
-        background-color: #FFF;
-        color: #323130;
-        border-color: #8A8886;
-    }
-
-    .button:hover {
-        background-color: #F3F2F1;
-        color: #201F1E;
-    }
-
-    .button:active {
-        background-color: #EDEBE9;
-        color: #201F1E;
-    }
-
-    .button.primary {
-        background-color: #0078D4;
-        color: #FFF;
-        border-color: #0078D4;
-    }
-
-    .button.primary:hover {
-        background-color: #106EBE;
-        border-color: #106EBE;
-    }
-
-    .button.primary:active {
-        background-color: #005A9E;
-        border-color: #005A9E;
-    }
-
-    .progress {
-        background-color: #F3F2F1;
-    }
-
-    .progress-bar {
-        background-color: #0078D4;
-    }   
-
-    table thead tr th {
-        color: #605E5C;
-    }
-    
-    tr td, tr th, table thead tr th {
-        border-bottom: 1px solid #D2D0CE;
-    }
-
-    .badge {
-        color: #F3F2F1;
-        background-color: #0078D4;    
-    }
-
-    .hero-sect.grey {
-        background-color: #FAF9F8;
-    }
-
-    .hero-sect.warning {
-        background-color: #FDE7E9;
-    }
-    
-    .hero-sect.blue {
-        background-color: #0078D4;
-    }
-
-    .hero-sect.blue *:not(.button) {
-        color: #FFF;
-    }
-
-    .state.working {
-        color: #107C10;
-        background-color: #DFF6DD;
-    }
-
-    .state.warning {
-        color: #797673;
-        background-color: #FFF4CE;
-    }
-
-    .state.error {
-        color: #A80000;
-        background-color: #FDE7E9;
-    }
-    p {
-        color: #F3F2F1;
-    }
-}
-
-/*** Dark Mode ***/
-@media (prefers-color-scheme: dark) {
-    html {
+html {
         background-color: #11100F;
         color: #F3F2F1;
     }
 
-    .secondary {
+.secondary {
         color: #D2D0CE;
     }
 
@@ -630,7 +494,3 @@ span.state > i.ms-Icon {
         background-color: #A80000;
         color: #FDE7E9;
     }
-    p {
-        color: white;
-    }
-}
