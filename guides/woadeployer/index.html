@@ -5,17 +5,17 @@
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Install WOA with WoaDeployer - Lumia WOA Project</title>
+    <title>使用 WoaDeployer 安装 WOA - Lumia WOA 项目</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/raster.grid.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/style.min.css" />
-    <meta name="description" content="This tool will help you install WOA easily on your Lumia using WoaDeployer, and choose your own build to use.">
-    <link rel="canonical" href="https://woa-project.github.io/LumiaWOA/">
-    <meta property="og:title" content="Install WOA with WoaDeployer - Lumia WOA Project" />
-    <meta property="og:description" content="This tool will help you install WOA easily on your Lumia using WoaDeployer, and choose your own build to use." />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/raster.grid.css" />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/style.min.css" />
+    <meta name="description" content="此教程将描述如何使用 WoaDeployer 在 Lumia 上轻松安装 WOA。">
+    <link rel="canonical" href="https://paving-base.github.io/LumiaWOA/">
+    <meta property="og:title" content="使用 WoaDeployer 安装 WOA - Lumia WOA 项目" />
+    <meta property="og:description" content="此教程将描述如何使用 WoaDeployer 在 Lumia 上轻松安装 WOA。" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://woa-project.github.io/LumiaWOA/" />
+    <meta property="og:url" content="https://paving-base.github.io/LumiaWOA/" />
 
 
 </head>
@@ -24,25 +24,25 @@
 
     <nav id="navbar">
         <div class="wrapper">
-            <a href="https://woa-project.github.io/LumiaWOA/" aria-label="Homepage">
-                Lumia WOA Project
+            <a href="https://paving-base.github.io/LumiaWOA/" aria-label="Homepage">
+                Lumia WOA 项目
             </a>
             <div class="nav-links">
 
 
-                <a href="https://woa-project.github.io/LumiaWOA/">Home</a>
+                <a href="https://paving-base.github.io/LumiaWOA/">主页</a>
 
-                <a class="active" href="https://woa-project.github.io/LumiaWOA/guides/">Guides</a>
+                <a class="active" href="https://paving-base.github.io/LumiaWOA/guides/">教程</a>
 
                 
 
-                <a href="https://woa-project.github.io/LumiaWOA/status/">Status</a>
+                <a href="https://paving-base.github.io/LumiaWOA/status/">状态</a>
 
-                <a href="https://woaproject.net/">Forum</a>
+                <a href="https://woaproject.net/">论坛</a>
 
-                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">Group</a>
+                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">群组</a>
 
-                <a href="https://t.me/LumiaWOA_Announcements">Channel</a>
+                <a href="https://t.me/LumiaWOA_Announcements">频道</a>
             </div>
         </div>
     </nav>
@@ -52,33 +52,32 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>Install WOA with WoaDeployer</h1>
-                <h4 class="secondary">This tool will help you install WOA easily, and choose your own build to use.</h4>
+                <h1>使用 WoaDeployer 安装 WOA</h1>
+                <h4 class="secondary">此教程将描述如何使用 WoaDeployer 在 Lumia 上轻松安装 WOA。</h4>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
             <div class="wrapper">
-                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
-                <h6>Bricks can happen</h6>
-                <p>This guide is an explaination of the correct steps to follow. Errors may still happen, both caused by 
-                    the user or by unpredictable conditions on your work machine. We're not resposible for any data loss,
-                    soft bricks or permanent damage on the device.</p>
-                <p style="font-weight: bold;">THIS WILL WIPE ALL YOUR PHONE DATA!</p>
+                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>警告</h3>
+                <h6>可能导致设备损坏</h6>
+                <p>本教程会演示正确步骤，但错误仍可能因用户机器上不可预测的情况而发生。我们不对设备的任何数据丢失，软砖或永久性损坏负责。</p>
+                <p>提供的固件仅用于测试目的，我们不对固件引起的任何数据丢失负责。请一定在安装之前备份好你的数据。</p>
+                <p style="font-weight: bold;">手机中的所有数据将被清空！</p>
             </div>
         </div>
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>Prerequisites</h2>
+                    <h2>先决条件</h2>
                     <ul>
-                        <li>Lumia 950 (Talkman) or Lumia 950 XL (Cityman)</li>
-                        <li>A Windows PC</li>
-                        <li>A cable to connect the phone to the PC</li>
+                        <li>一台 Lumia 950 (Talkman) 或 Lumia 950 XL (Cityman)</li>
+                        <li>一台 Windows 电脑</li>
+                        <li>一根数据线</li>
                     </ul>
-                    <p style="font-weight: bold;">The phone bootloader must be unlocked. If you haven't done that already, <a href="https://woa-project.github.io/LumiaWOA/guides/unlock/">please do that from here.</a></p>
+                    <p style="font-weight: bold;">手机的 Bootloader 必须已解锁。如果你还没有完成解锁，<a href="https://paving-base.github.io/LumiaWOA/guides/unlock/">请参考此教程。</a></p>
                     <p>Files:</p>
                     <ul>
-                        <li>One <a href="https://woa-project.github.io/LumiaWOA/guides/createiso/">install.wim file</a>, extracted from your ISO of choice.</li>
+                        <li>一个从你下载的 ISO 镜像中解压出来的 <a href="https://paving-base.github.io/LumiaWOA/guides/createiso/">install.wim 文件</a></li>
                         <li><a href="https://github.com/WOA-Project/WOA-Deployer-Lumia/releases">WoaDeployer</a></li>
                     </ul>
                 </r-cell>
@@ -86,12 +85,12 @@
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/phone_deploy.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/phone_deploy.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/phone_deploy.png" alt="Vectorial phone with a deploy symbol" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/phone_deploy.png" alt="Vectorial phone with a deploy symbol" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/phone_deploy.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/phone_deploy.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -99,28 +98,26 @@
             </r-grid>
         </div>
         <div class="hero-sect">
-            <h2>Before starting...</h2>
+            <h2>在开始前...</h2>
             <div class="expander">
                 <input id="expander" class="toggle" type="checkbox">
                 <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                    I'm deploying a build newer than 18363 and I want phone calls to work
+                    我正在部署比 18363（1909） 更新的版本，而且我希望电话能正常工作。
                 </label>
                 <div class="expander-content">
                     <p>
-                        You'll need to extract your ICan0 value from an older build than 18363. If you already have it,
-                        then feel free to ignore this box.
+                        你需要从比 18363 更旧的版本中提取 ICan0 值。如果你已经拥有，请忽略此框。
                     </p>
                     <p>
-                        If you don't have it, deploy build 18363 or anything earlier using this same guide or 
-                        <a href="https://woa-project.github.io/LumiaWOA/guides/flashffu/">the FFU flashing guide</a>, follow 
-                        <a href="https://woa-project.github.io/LumiaWOA/guides/ican0/">this other guide</a>, 
-                        then come back here and deploy the build of your choice.
+                        如果你没有，请使用相同的指南或者
+                        <a href="https://paving-base.github.io/LumiaWOA/guides/flashffu/">FFU 刷入教程</a>部署 build 18363 或任何更早的版本然后参考 
+                        <a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">这个教程提取 ICan0 值</a>，然后再回来部署你想要的系统版本。
                     </p>
                     <p>
-                        Read everything before starting!
+                        在开始之前阅读所有内容！
                     </p>
                     <p>
-                        When you're done, don't forget to restore the ICan0 value!
+                        完成后，不要忘记再次参考<a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">此教程</a>恢复 ICan0 值！
                     </p>
                 </div>
                 <style>
@@ -145,31 +142,29 @@
                 </style>
             </div>
 
-            <h2>Entering Mass Storage Mode</h2>
+            <h2>进入大容量存储模式</h2>
             <p>
-                To start, you will need to switch to Mass Storage Mode on your phone. Here are the steps needed in WPInternals: 
+                首先，你需要将手机切换到大容量存储模式，以下是 WPInternals 中所需的步骤：
             </p>
             <p>
-                Make sure any other tool is closed, then open WPInternals and plug your phone to your PC. You now have
-                two options:
+                确保关闭任何其他工具，然后打开 WPInternals 并将手机连接电脑。你现在有两个选择：
             </p>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Option A) If you currently have booted into Windows Phone, go to the “Manual mode” tab and 
-                        choose “Switch to Mass-Storage-mode”.
+                        选项 A) 如果手机已经启动到 Windows Phone，前往 “Manual mode” 选项卡 并选择 “Switch to Mass-Storage-mode”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_manual_mode.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_manual_mode.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_manual_mode.png" alt="WPInternals page for mode selection" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_manual_mode.png" alt="WPInternals page for mode selection" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_manual_mode.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_manual_mode.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -178,52 +173,50 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Option B) If you don’t have access to Windows Phone or if your phone is not detected, go to 
-                        the “Manual mode” tab, and click “interrupt the boot-process”. Then do a soft reboot on your 
-                        phone: Keep holding the volume – and power button at the same time until your phone shuts 
-                        down and vibrates. WPInternals should now detect your phone, and you’ll be able to choose 
-                        “Switch to Mass-Storage-mode” in the “Manual mode” tab.
+                        选项 B) 如果手机没有启动到 Windows Phone 或者手机没有被检测到，前往 “Manual mode” 选项卡
+                        并点击 “interrupt the boot-process”。然后将手机强制重启：同时按住音量减和电源键，直到手机
+                        关机并振动，WPInternals 应该会识别到你的手机，之后你就可以在 “Manual mode” 选项卡中选择
+                        “Switch to Mass-Storage-mode”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.png" alt="WPInternals is looking for the phone" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.png" alt="WPInternals is looking for the phone" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/wpi_interrupt_boot.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
                 </r-cell>
             </r-grid>
             <p style="margin-top: 10%;">
-                Wait until WPInternals reports that your phone is now in Mass Storage Mode. Now CLOSE WPInternals. 
-                It needs to be closed, or the next steps will fail for sure. This is important, so don’t leave it running. 
+                等到 WPInternals 报告你的手机现在处于大容量存储模式后，关闭 WPInternals。注意：必须关闭，否则接下来的步骤一定会失败。
             </p>
-            <h2 style="margin-top: 30%;">Using WoaDeployer</h2>
+            <h2 style="margin-top: 30%;">使用 WoaDeployer</h2>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Open WoaDeployer, you will get this page.
+                        打开 WoaDeployer，你会看到此页面。
                     </p>
                     <p>
-                        Read it, then press OK.
+                        认真阅读（看不懂的自己用翻译），并点击“OK”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_welcome.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_welcome.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_welcome.png" alt="WoaDeployer welcome page" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_welcome.png" alt="WoaDeployer welcome page" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_welcome.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_welcome.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -232,19 +225,19 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        This is the WoaDeployer interface. Press on "Browse..."
+                        这就是 WoaDeployer 的主界面。点击 “Browse...”
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png" alt="WoaDeployer first screen" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png" alt="WoaDeployer first screen" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_mainpage.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -253,19 +246,19 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Choose your previously extracted install.wim file.
+                        选择你的 install.wim 文件。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_choosewim.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_choosewim.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_choosewim.png" alt="choosing the wim file to flash" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_choosewim.png" alt="choosing the wim file to flash" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_choosewim.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_choosewim.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -275,31 +268,30 @@
                 <input id="expander2" class="toggle2" type="checkbox">
                 <label for="expander2" class="toggle-label2">
                     <i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                    If you want to keep Windows 10 Mobile alongside Windows on ARM, expand this box
+                    如果你希望将 Windows 10 Mobile 与 Windows on ARM 一起保留，请展开此框阅读步骤。
                 </label>
                 <div class="expander-content2">
                     <r-grid columns=2>
                         <r-cell span-s=row>
                             <p>
-                                Go to the advanced tab. 
+                                前往 “Advanced” 选项卡。
                             </p>
                             <p>
-                                Here, choose that you want to Keep Windows 10 Mobile (so that you will be able to use Dual
-                                Boot later).
+                                在这里选择 Keep Windows 10 Mobile（你可在完成 WOA 安装后启用双启动）。
                             </p>
-                            <p>Choose this carefully now, because you'll have to start from scratch if you change your mind!</p>
-                            <p>When you're done, go back to the Deployment tab.</p>
+                            <p>现在请谨慎选择，因为如果你改变主意，就必须刷回原始 FFU 镜像并从头开始。</p>
+                            <p>完成后，返回 “Deployment” 选项卡。</p>
                         </r-cell>
                         <r-cell span-s=row>
                             <figure>
                                 <div class="img-wrapper" style="padding-bottom: 52.81%;">
                                     <picture>
-                                        <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.webp"
+                                        <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_keepwm.webp"
                                             type="image/webp" />
                                         <img class="lazyload img-fluid" loading="lazy"
-                                            src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png" alt="WoaDeployer advanced page" />
+                                            src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png" alt="WoaDeployer advanced page" />
                                     </picture>
-                                    <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png"
+                                    <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_keepwm.png"
                                             class="img-fluid" /></noscript>
                                 </div>
                             </figure>
@@ -332,19 +324,19 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        When you feel ready, press the big "Deploy" button.
+                        当你准备好时，按下 "Deploy" 按钮。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.png" alt="WoaDeployer is ready to deploy" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.png" alt="WoaDeployer is ready to deploy" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/woadeployer_readytodeploy.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
