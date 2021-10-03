@@ -5,14 +5,14 @@
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>在版本高于 18363 系统上启用通话 - Lumia WOA 计划</title>
+    <title>在版本高于 18363 的系统上启用通话 - Lumia WOA 计划</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
     <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/raster.grid.css" />
     <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/style.min.css" />
     <meta name="description" content="以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。">
     <link rel="canonical" href="https://paving-base.github.io/LumiaWOA/">
-    <meta property="og:title" content="在版本高于 18363 系统上启用通话 - Lumia WOA 计划" />
+    <meta property="og:title" content="在版本高于 18363 的系统上启用通话 - Lumia WOA 计划" />
     <meta property="og:description" content="以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://paving-base.github.io/LumiaWOA/" />
@@ -52,13 +52,13 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>在版本高于 18363 系统上启用通话</h1>
+                <h1>在版本高于 18363 的系统上启用通话</h1>
                 <h4 class="secondary">以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。</h4>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
             <div class="wrapper">
-                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
+                <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>警告</h3>
                 <h6>可能导致设备损坏</h6>
                 <p>
                     本教程会演示正确步骤，但错误仍可能因用户机器上不可预测的情况而发生。我们不对设备的任何数据丢失，软砖或永久性损坏负责。
@@ -88,7 +88,7 @@
                         将 SIM 卡插入系统版本低于 18363 的设备，并开机。
                     </p>
                     <p>
-                        打开搜索，并运行：
+                        打开搜索，并搜索运行：
                     </p>
                     <code>regedit</code>
                 </r-cell>
@@ -96,12 +96,12 @@
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_1.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_1.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_1.png" alt="Regedit main page" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_1.png" alt="Regedit main page" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_1.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_1.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -110,24 +110,23 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Navigate to this key:
+                        找到以下键值：
                     </p>
                     <code>HKEY_LOCAL_MACHINE\SOFTWARE\OEM\RILINITSVC\</code>
                     <p>
-                        Take note of the ICan0 value. This is what you will need in part 2 
-                        to make calls work on every build!
+                        记下/复制/导出 ICan0 值。这是你在第二部分中需要的，以使通话在任意系统版本中都能正常工作。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_2.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_2.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_2.png" alt="The Ican0 value" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_2.png" alt="The Ican0 value" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_2.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_2.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -136,25 +135,24 @@
             <div class="expander">
                 <input id="expander" class="toggle" type="checkbox">
                 <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                    I don't have a RILINITSVC / ICan0 registry key
+                    我没有 RILINITSVC / ICan0 注册表键值
                 </label>
                 <div class="expander-content">
                     <p>
-                        You can try a few things:
+                        尝试以下解决方法：
                     </p>
                     <ul>
                         <li>
-                            Make sure a SIM is inserted
+                            确保你已经插入 SIM 卡；
                         </li>
                         <li>
-                            Reboot your phone
+                            重启手机；
                         </li>
                         <li>
-                            Make sure the MobileNetworkingService is running. If it isn't 
-                            try to start it and wait a bit.
+                            确保 MobileNetworkingService 服务正在运行。如果没有启动，尝试将其手动启动并稍等片刻。
                         </li>
                         <li>
-                            Are you running a build lower or equal to 18363?
+                            你当前的系统版本低于或等于 18363 吗？
                         </li>
                     </ul>
                 </div>
@@ -183,12 +181,11 @@
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>Part 2 - Setting the ICan0 value</h2>
-                    <h3>Prerequisites</h3>
+                    <h2>第二部分 - 设置 ICan0 值</h2>
+                    <h3>先决条件</h3>
                     <ul>
                         <li>
-                            The Lumia with Windows on ARM build higher than 18363 where 
-                            you want to activate calls
+                            一台装有 Windows on ARM 版本高于 build 18363 的 Lumia
                         </li>
                     </ul>
                 </r-cell>
@@ -200,25 +197,25 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Open search and run:
+                        打开搜索，并搜索运行：
                     </p>
                     <code>regedit</code>
                     <p>
-                        Then navigate to this key:
+                        找到以下键值：
                     </p>
                     <code>HKEY_LOCAL_MACHINE\SOFTWARE\OEM\RILINITSVC\</code>
-                    <p>If you don't have the RILINITSVC Key, create it like shown in the screenshot</p>
+                    <p>如果你没有 RILINITSVC 键值，请像截图中一样手动创建一个。</p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_3.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_3.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_3.png" alt="Creating the RILINITSVC Key" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_3.png" alt="Creating the RILINITSVC Key" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_3.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_3.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -227,24 +224,23 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Inside RILINITSVC create a String named 
+                        在 RILINITSVC 项中，新建一个字符串值，命名为： 
                     </p>
                         <code>ICan0</code>
                     <p>
-                        and set the 
-                        recovered value.
+                        并设置为之前你记录下来的值。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
                         <div class="img-wrapper" style="padding-bottom: 52.81%;">
                             <picture>
-                                <source srcset="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_4.webp"
+                                <source srcset="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_4.webp"
                                     type="image/webp" />
                                 <img class="lazyload img-fluid" loading="lazy"
-                                    src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_4.png" alt="Inserting the ICan0 value" />
+                                    src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_4.png" alt="Inserting the ICan0 value" />
                             </picture>
-                            <noscript><img src="https://woa-project.github.io/LumiaWOA/img/guides/ican0_regedit_4.png"
+                            <noscript><img src="https://paving-base.github.io/LumiaWOA/img/guides/ican0_regedit_4.png"
                                     class="img-fluid" /></noscript>
                         </div>
                     </figure>
@@ -256,17 +252,17 @@
 
     <footer>
         <div class="wrapper caption secondary">
-            <p>© 2017-2021 The Lumia WOA Authors</p>
-            <p>Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo,
-                Windows, Lumia, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft
-                Corporation in the United States. Miracast is a registered trademark of the Wi-Fi Alliance. Other
-                binaries may be copyright Qualcomm Incorporated and Microsoft Mobile.</p>
-            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. Site built by @itsmichaelwest.</p>
+            <p>© 2017-2021 Lumia WOA 项目作者</p>
+            <p>Snapdragon 是高通公司的注册商标。 
+                Microsoft、Microsoft Corporate 徽标、Windows、Lumia、Windows Hello、Continuum、Hyper-V 和 DirectX 是 Microsoft Corporation 在美国的注册商标。 
+                Miracast 是 Wi-Fi 联盟的注册商标。 
+                其他二进制文件可能是 Qualcomm Incorporated 和 Microsoft Mobile 的版权。</p>
+            <p>Hello from San Francisco (US), France, Italy, Germany, Spain, Hungary. 此页面由 @itsmichaelwest 创建，由 @SetsunaKiyouraTD 翻译为简体中文。</p>
         </div>
     </footer>
 
 
-    <script src="https://woa-project.github.io/LumiaWOA/js/site.min.js"></script>
+    <script src="https://paving-base.github.io/LumiaWOA/js/site.min.js"></script>
 </body>
 
 </html>
