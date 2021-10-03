@@ -5,17 +5,17 @@
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>Enable calls on builds higher than 18363 - Lumia WOA Project</title>
+    <title>在版本高于 18363 系统上启用通话 - Lumia WOA 计划</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/raster.grid.css" />
-    <link rel="stylesheet" href="https://woa-project.github.io/LumiaWOA/css/style.min.css" />
-    <meta name="description" content="Here's how to retrieve the ICan0 value and enable calls on Lumia WOA">
-    <link rel="canonical" href="https://woa-project.github.io/LumiaWOA/">
-    <meta property="og:title" content="Enable calls on builds higher than 18363 - Lumia WOA Project" />
-    <meta property="og:description" content="Here's how to retrieve the ICan0 value and enable calls on Lumia WOA" />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/raster.grid.css" />
+    <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/style.min.css" />
+    <meta name="description" content="以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。">
+    <link rel="canonical" href="https://paving-base.github.io/LumiaWOA/">
+    <meta property="og:title" content="在版本高于 18363 系统上启用通话 - Lumia WOA 计划" />
+    <meta property="og:description" content="以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://woa-project.github.io/LumiaWOA/" />
+    <meta property="og:url" content="https://paving-base.github.io/LumiaWOA/" />
 
 
 </head>
@@ -25,24 +25,24 @@
     <nav id="navbar">
         <div class="wrapper">
             <a href="https://woa-project.github.io/LumiaWOA/" aria-label="Homepage">
-                Lumia WOA Project
+                Lumia WOA 计划
             </a>
             <div class="nav-links">
 
 
-                <a href="https://woa-project.github.io/LumiaWOA/">Home</a>
+                <a href="https://paving-base.github.io/LumiaWOA/">主页</a>
 
-                <a class="active" href="https://woa-project.github.io/LumiaWOA/guides/">Guides</a>
+                <a class="active" href="https://paving-base.github.io/LumiaWOA/guides/">教程</a>
 
                 
 
-                <a href="https://woa-project.github.io/LumiaWOA/status/">Status</a>
+                <a href="https://paving-base.github.io/LumiaWOA/status/">状态</a>
 
-                <a href="https://woaproject.net/">Forum</a>
+                <a href="https://woaproject.net/">论坛</a>
 
-                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">Group</a>
+                <a href="https://t.me/joinchat/C-AWlUUp3wxdcLRKwNOYsA">群组</a>
 
-                <a href="https://t.me/LumiaWOA_Announcements">Channel</a>
+                <a href="https://t.me/LumiaWOA_Announcements">频道</a>
             </div>
         </div>
     </nav>
@@ -52,32 +52,29 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>Enable calls on builds higher than 18363</h1>
-                <h4 class="secondary">Here's how to retrieve the ICan0 value and restore it to make calls work on builds newer than 18363</h4>
+                <h1>在版本高于 18363 系统上启用通话</h1>
+                <h4 class="secondary">以下是获得并恢复 ICan0 值以使通话在版本高于 18363 的系统中工作的方法。</h4>
             </div>
         </div>
         <div class="hero-sect warning main-breakout">
             <div class="wrapper">
                 <h3><i class="ms-Icon ms-Icon--Warning" aria-hidden="true"></i>Caution</h3>
-                <h6>Bricks can happen</h6>
+                <h6>可能导致设备损坏</h6>
                 <p>
-                    This guide is an explaination of the correct steps to follow. Errors may still happen, both caused by 
-                    the user or by unpredictable conditions on your work machine. We're not resposible for any data loss,
-                    soft bricks or permanent damage on the device.
+                    本教程会演示正确步骤，但错误仍可能因用户机器上不可预测的情况而发生。我们不对设备的任何数据丢失，软砖或永久性损坏负责。
                 </p>
             </div>
         </div>
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>Part 1 - Retrieving the ICan0 value</h2>
-                    <h3>Prerequisites</h3>
+                    <h2>第一部分 - 获得 ICan0 值</h2>
+                    <h3>先决条件</h3>
                     <ul>
-                        <li>A Lumia with Windows on ARM build 18363 or lower</li>
+                        <li>一台装有 Windows on ARM build 18363 或更低版本的 Lumia</li>
                     </ul>
                     <p>
-                        Note: The ICan0 value is SIM-specific. This means you can actually use another device than the target 
-                        device, if needed, to retrieve it.
+                        注意：ICan0 值是每张 SIM 卡特有的，所以你可以用另一部装有目标版本系统的 Lumia 设备来获取。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -88,11 +85,10 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Boot your phone with build 18363 or lower while a SIM 
-                        is inserted. 
+                        将 SIM 卡插入系统版本低于 18363 的设备，并开机。
                     </p>
                     <p>
-                        Open search and run:
+                        打开搜索，并运行：
                     </p>
                     <code>regedit</code>
                 </r-cell>
