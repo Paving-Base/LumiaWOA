@@ -374,130 +374,128 @@ span.state > i.ms-Icon {
 /*** Light Mode ***/
 @media (prefers-color-scheme: light) {
     html {
-        background-color: #FFF;
-        color: #323130;
+        background-color: #11100F;
+        color: #F3F2F1;
     }
 
-    .secondary { 
-        color: #605E5C;
-    }
-
-    a {
-        color: #0078D4;
-    }
-
-    a:hover {
-        color: #106EBE;
+    .secondary {
+        color: #D2D0CE;
     }
 
     footer {
-        background-color: #F3F2F1;
+        background-color: #323130;
+    }
+
+    a {
+        color: #2899F5;
+    }
+
+    a:hover {
+        color: #3AA0F3;
     }
 
     @supports (backdrop-filter: blur(30px) saturate(125%)) or (-webkit-backdrop-filter: blur(30px) saturate(125%)) {
         nav.scrolled {
-            background-color: rgba(255,255,255,.9);
+            background-color: rgba(17,16,15,.9);
         }
     }
 
     nav > .wrapper > .nav-links > a {
-        color: #605E5C;
+        color: #D2D0CE;
     }
 
     nav > .wrapper > .nav-links > a.active {
-        border-bottom: 2px solid #0078D4;
+        border-bottom: 2px solid  #2899F5;
         font-weight: 600;
-        color: #323130;
+        color: #F3F2F1;
     }
 
     nav > .wrapper > .nav-links > a:hover {
-        border-bottom: 2px solid #0078D4;
-        background-color: rgba(0,0,0,.1);
-        color: #323130;
+        border-bottom: 2px solid  #2899F5;
+        background-color: rgba(255,255,255,.1);
+        color: #F3F2F1;
     }
 
     .button {
-        background-color: #FFF;
-        color: #323130;
-        border-color: #8A8886;
+        background-color: #1B1A19;
+        color: #FFF;
+        border-color: #979693;
     }
 
     .button:hover {
-        background-color: #F3F2F1;
-        color: #201F1E;
+        background-color: #252423;
+        color: #F3F2F1;
     }
 
     .button:active {
-        background-color: #EDEBE9;
-        color: #201F1E;
+        background-color: #292827;
+        color: #FAF9F8;
     }
 
     .button.primary {
-        background-color: #0078D4;
-        color: #FFF;
-        border-color: #0078D4;
+        background-color: #2899F5;
+        color: #1B1A19;
+        border-color: #2899F5;
     }
 
     .button.primary:hover {
-        background-color: #106EBE;
-        border-color: #106EBE;
+        background-color: #3AA0F3;
+        color: #1B1A19;
+        border-color: #3AA0F3;
     }
 
     .button.primary:active {
-        background-color: #005A9E;
-        border-color: #005A9E;
+        background-color: #6CB8F6;
+        color: #1B1A19;
+        border-color: #6CB8F6;
     }
 
     .progress {
-        background-color: #F3F2F1;
+        background-color: #252423;
     }
 
     .progress-bar {
-        background-color: #0078D4;
-    }   
+        background-color: #2899F5;
+    }
 
     table thead tr th {
-        color: #605E5C;
+        color: #B3B0AD;
     }
-    
+
     tr td, tr th, table thead tr th {
-        border-bottom: 1px solid #D2D0CE;
+        border-bottom: 1px solid #3B3A39;
     }
 
     .badge {
-        color: #F3F2F1;
-        background-color: #0078D4;    
+        color: #323130;
+        background-color: #2899F5;    
     }
 
     .hero-sect.grey {
-        background-color: #FAF9F8;
+        background-color: #323130;
     }
 
     .hero-sect.warning {
-        background-color: #FDE7E9;
+        background-color: #a80000;
     }
     
     .hero-sect.blue {
-        background-color: #0078D4;
-    }
-
-    .hero-sect.blue *:not(.button) {
-        color: #FFF;
+        background-color: #005A9E;
     }
 
     .state.working {
-        color: #107C10;
-        background-color: #DFF6DD;
+        background-color: #107C10;
+        color: #DFF6DD;
     }
 
     .state.warning {
-        color: #797673;
-        background-color: #FFF4CE;
+        background-color: #797673;
+        color: #FFF4CE;
     }
 
     .state.error {
-        color: #A80000;
-        background-color: #FDE7E9;
+        background-color: #A80000;
+        color: #FDE7E9;
     }
 }
 
