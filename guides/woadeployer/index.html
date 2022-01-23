@@ -74,7 +74,7 @@
                         <li>一台 Windows 电脑</li>
                         <li>一根数据线</li>
                     </ul>
-                    <p style="font-weight: bold;">手机的 Bootloader 必须已解锁。如果你还没有完成解锁，<a href="https://paving-base.github.io/LumiaWOA/guides/unlock/">请参考此教程。</a></p>
+                    <p style="font-weight: bold;">手机的 Bootloader 必须已解锁。如果你还没有完成解锁，请参考<a href="https://paving-base.github.io/LumiaWOA/guides/unlock/">此教程</a>。</p>
                     <p>Files:</p>
                     <ul>
                         <li>一个从你下载的 ISO 镜像中解压出来的 <a href="https://paving-base.github.io/LumiaWOA/guides/createiso/">install.wim 文件</a></li>
@@ -102,7 +102,7 @@
             <div class="expander">
                 <input id="expander" class="toggle" type="checkbox">
                 <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                    我正在部署比 18363（1909） 更新的版本，而且我希望电话能正常工作。
+                    我正在部署比 18363（1909） 更新的版本，且希望电话能正常工作。
                 </label>
                 <div class="expander-content">
                     <p>
@@ -111,13 +111,13 @@
                     <p>
                         如果你没有，请使用相同的指南或者
                         <a href="https://paving-base.github.io/LumiaWOA/guides/flashffu/">FFU 刷入教程</a>部署 build 18363 或任何更早的版本然后参考 
-                        <a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">这个教程提取 ICan0 值</a>，然后再回来部署你想要的系统版本。
+                        <a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">这个教程</a>提取 ICan0 值，然后再回来部署你想要的系统版本。
                     </p>
                     <p>
-                        在开始之前阅读所有内容！
+                        请在开始之前仔细阅读所有内容。
                     </p>
                     <p>
-                        完成后，不要忘记再次参考<a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">此教程</a>恢复 ICan0 值！
+                        提取完成并安装好新版本系统后，请再次参考<a href="https://paving-base.github.io/LumiaWOA/guides/ican0/">此教程</a>恢复 ICan0 值以使电话功能正常工作。
                     </p>
                 </div>
                 <style>
@@ -144,15 +144,15 @@
 
             <h2>进入大容量存储模式</h2>
             <p>
-                首先，你需要将手机切换到大容量存储模式，以下是 WPInternals 中所需的步骤：
+                首先需要使用 WPInternals 来进入大容量存储模式，步骤如下：
             </p>
             <p>
-                确保关闭任何其他工具，然后打开 WPInternals 并将手机连接电脑。你现在有两个选择：
+                确保关闭任何其他工具，然后打开 WPInternals 并将手机连接电脑。以下分为两种情况：
             </p>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        选项 A) 如果手机已经启动到 Windows Phone，前往 “Manual mode” 选项卡 并选择 “Switch to Mass-Storage-mode”。
+                        情况 A) 如果手机已经启动到 Windows Phone 系统，前往 “Manual mode” 选项卡 并选择 “Switch to Mass-Storage-mode”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -173,7 +173,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        选项 B) 如果手机没有启动到 Windows Phone 或者手机没有被检测到，前往 “Manual mode” 选项卡
+                        情况 B) 如果手机没有启动到 Windows Phone 或者手机没有被检测到，请前往 “Manual mode” 选项卡
                         并点击 “interrupt the boot-process”。然后将手机强制重启：同时按住音量减和电源键，直到手机
                         关机并振动，WPInternals 应该会识别到你的手机，之后你就可以在 “Manual mode” 选项卡中选择
                         “Switch to Mass-Storage-mode”。
@@ -195,16 +195,16 @@
                 </r-cell>
             </r-grid>
             <p style="margin-top: 10%;">
-                等到 WPInternals 报告你的手机现在处于大容量存储模式后，关闭 WPInternals。注意：必须关闭，否则接下来的步骤一定会失败。
+                等到 WPInternals 提示手机已处于大容量存储模式后，关闭 WPInternals（重要）。
             </p>
             <h2 style="margin-top: 30%;">使用 WoaDeployer</h2>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        打开 WoaDeployer，你会看到此页面。
+                        打开 WoaDeployer，会出现如下页面。
                     </p>
                     <p>
-                        认真阅读（看不懂的自己用翻译），并点击“OK”。
+                        认真阅读信息（如英语非你所长，请善用翻译），并点击“OK”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -225,7 +225,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        这就是 WoaDeployer 的主界面。点击 “Browse...”
+                        这就是 WoaDeployer 的主界面。请点击 “Browse...”
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -246,7 +246,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        选择你的 install.wim 文件。
+                        选择准备好的 install.wim 文件。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -268,7 +268,7 @@
                 <input id="expander2" class="toggle2" type="checkbox">
                 <label for="expander2" class="toggle-label2">
                     <i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>
-                    如果你希望将 Windows 10 Mobile 与 Windows on ARM 一起保留，请展开此框阅读步骤。
+                    如果你希望保留 Windows 10 Mobile，请展开此框阅读步骤。
                 </label>
                 <div class="expander-content2">
                     <r-grid columns=2>
@@ -277,10 +277,10 @@
                                 前往 “Advanced” 选项卡。
                             </p>
                             <p>
-                                在这里选择 Keep Windows 10 Mobile（你可在完成 WOA 安装后启用双启动）。
+                                在这里选择"Keep Windows 10 Mobile"（保留 Windows 10 Mobile）。
                             </p>
-                            <p>现在请谨慎选择，因为如果你改变主意，就必须刷回原始 FFU 镜像并从头开始。</p>
-                            <p>完成后，返回 “Deployment” 选项卡。</p>
+                            <p>并调整你想给 Windows on ARM 分区保留的空间。</p>
+                            <p>设置完成后，请返回 “Deployment” 选项卡。</p>
                         </r-cell>
                         <r-cell span-s=row>
                             <figure>
@@ -324,7 +324,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        当你准备好时，按下 "Deploy" 按钮。
+                        当你准备好时，点击"Deploy"按钮。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -345,10 +345,10 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        程序开始工作，稍等片刻会弹出包含最新更改日志的页面。点击 “Close” 以继续安装。
+                        程序会开始工作，稍等片刻会弹出包含最新驱动更新日志的页面。点击“Close”以继续安装。
                     </p>
                     <p>
-                        WoaDeployer 会继续下载需要的文件，并自动开始安装。你可能会看到 Windows 弹出一些有关检测到新设备的通知，忽略即可。
+                        WoaDeployer 会继续下载需要的文件并安装引导程序。你可能会看到 Windows 弹出一些有关检测到新磁盘并询问是否格式化的通知，关闭即可。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -369,14 +369,14 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        某些时候，系统会提示您再次切换到大容量存储模式，这次需要使用刚刚安装到手机的 Developer Menu（开发人员菜单）。
+                        稍后，程序会提示你再次切换到大容量存储模式，这次需要使用刚刚安装到手机的 Developer Menu（开发人员菜单）。
                     </p>
                     <p>
                         阅读屏幕上的信息，并按照说明进行操作（长按电源键直到手机黑屏并振动，手机会重启，出现引导菜单时用音量键选择 “Developer Menu”，相机键确认，然后继续用音量键和相机键选择 “UEFI Mass Storage Mode”）。
                         如果你按照正确的步骤操作，最后你会在手机屏幕上看到 “UEFI Mass Storage” 和 “Connected”。
                     </p>
                     <p>
-                        点击 "Continue"。
+                        完成后，请点击"Continue"以继续安装进程。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -397,7 +397,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        在等待这一步的同时，不妨根据自己的喜好来杯咖啡☕或茶🍵。
+                        映像释放过程耗时较长（可能长达数小时），请坐和放宽。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -418,7 +418,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        完成该步骤后，它将注入驱动程序。
+                        映像释放完成后，程序会开始注入驱动程序。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -439,10 +439,10 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        ...完成！按照显示的步骤操作，尽情享受吧！
+                        当出现此提示时，说明所有安装步骤均已完成。Enjoy!
                     </p>
                     <p>
-                        提示：如果之前你选择了保留 Windows 10 Mobile 并想使用双启动，不要忘记参考<a href="https://paving-base.github.io/LumiaWOA/guides/dualboot/">此教程</a>来启用双启动！
+                        提示：如果之前你选择了保留 Windows 10 Mobile 并想使用双启动，不要忘记参考<a href="https://paving-base.github.io/LumiaWOA/guides/dualboot/">此教程</a>来启用双启动。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
