@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta name="generator" content="Hugo 0.69.0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <title>如何获取一个用于部署的 ISO 文件 - Lumia WOA 计划</title>
+    <title>如何获取用于部署的 ISO 文件 - Lumia WOA 项目</title>
     <link rel="stylesheet"
         href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
     <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/raster.grid.css" />
     <link rel="stylesheet" href="https://paving-base.github.io/LumiaWOA/css/style.min.css" />
     <meta name="description" content="以下是如何获得 WOA Deployer 所需的完整 ISO 和 install.wim 文件的方法。">
     <link rel="canonical" href="https://paving-base.github.io/LumiaWOA/">
-    <meta property="og:title" content="如何获取一个用于部署的 ISO 文件 - Lumia WOA 计划" />
+    <meta property="og:title" content="如何获取一个用于部署的 ISO 文件 - Lumia WOA 项目" />
     <meta property="og:description" content="以下是如何获得 WOA Deployer 所需的完整 ISO 和 install.wim 文件的方法。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://paving-base.github.io/LumiaWOA/" />
@@ -25,7 +25,7 @@
     <nav id="navbar">
         <div class="wrapper">
             <a href="https://paving-base.github.io/LumiaWOA/" aria-label="Homepage">
-                Lumia WOA 计划
+                Lumia WOA 项目
             </a>
             <div class="nav-links">
 
@@ -52,7 +52,7 @@
     <main aria-role="main">
         <div id="hero" class="sect">
             <div>
-                <h1>如何获取一个用于部署的 ISO 文件</h1>
+                <h1>如何获取用于部署的 ISO 文件</h1>
                 <h4 class="secondary">以下是如何获得 WOA Deployer 所需的完整 ISO 和 install.wim 文件的方法。</h4>
             </div>
         </div>
@@ -80,15 +80,15 @@
         <div class="hero-sect">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>第一部分：UUPdump</h2>
+                    <h2>第一部分：使用 UUPdump</h2>
                     <p>
-                        在任意浏览器中打开 <a href="https://uupdump.net">uupdump.net</a>
+                        在任意浏览器中打开 <a href="https://uupdump.net">uupdump.net</a>，可在上方功能区切换语言。
                     </p>
                     <p>
                         你可在 Quick options（快速选项）面板选择你想下载的构建类型。
-                        如果你想要更多新功能，可选择 Dev Channel（不建议，驱动可能无法适配 Dev Channel 的系统版本），如果你想要更稳定的体验，则选择 Public Release（公开发布）版本（Windows 10）。
-                        另外两个选项（Beta 和 Release Preview）是两者的中间值（推荐选择 Release Preview，提供了 Windows 11 目前最稳定的版本），如果你参与了 Windows Insider Program，则应该知道它们的区别。
-                        确定好版本后，就选择对应构建类型下的 "arm64"。在本指南中，我们将选择 Public Release（公开发布）版本。
+                        如果你想要更多新功能，可选择 Dev Channel（不建议，驱动可能无法适配 Dev Channel 的系统版本），如果你想要更稳定的体验，则选择 Public Release（公开发布的最新内部版本）。
+                        另外两个选项（Beta 和 Release Preview）供了解 Windows Insider Program 的人选用。
+                        确定好版本后，就选择对应构建类型下的 "arm64"。在本指南中，我们将选择 Public Release（公开发布的最新内部版本）。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -184,7 +184,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        一旦结束，你就完成了! 生成的 ISO 和 *.cmd 文件在同一个文件夹里。
+                        当出现“请按任意键继续”时，说明已完成。生成的 ISO 和 *.cmd 文件在同一个文件夹里。
                     </p>
                     <p>
                         下一步我们会解压出 WOA Deployer 所需要的 install.wim 文件（此步可省略，直接挂载 ISO 文件并在 WOA Deployer 中选择虚拟驱动器里的 install.wim 即可）。
@@ -213,7 +213,7 @@
                     <p>
                         挂载 ISO，或使用 7-Zip 等工具打开 ISO 文件，你会在 “sources” 文件夹下找到 “install.wim”。
                     </p>
-                    <p>将其复制/解压到任意文件夹，完成。</p>
+                    <p>将其解压到任意文件夹，完成。</p>
                 </r-cell>
                 <r-cell span-s=row>
                     <figure>
