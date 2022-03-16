@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -72,7 +72,7 @@
         <div class="hero-sect grey main-breakout">
             <r-grid columns=2>
                 <r-cell span-s=row>
-                    <h2>Prerequisites</h2>
+                    <h2>先决条件</h2>
                     <ul>
                         <li>Lumia 950 (Talkman) 或者 Lumia 950 XL (Cityman)</li>
                         <li>一台 Windows 电脑</li>
@@ -150,14 +150,12 @@
                 首先需要使用 WPInternals 让手机进入 Flash Mode，步骤如下：
             </p>
             <p>
-                Make sure any other tool is closed, then open WPInternals and plug your phone to your PC. You now have
-                two options:
+                确保其它工具均已关闭后，打开 WPInternals 并将手机连接至电脑。下面分为两种情况：
             </p>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Option A) If you currently have booted into Windows Phone, go to the “Manual mode” tab and 
-                        choose “Switch to Flash-mode”.
+                        情况 A：如果手机已经启动到 Windows Phone，请前往 “Manual mode” 选项卡并点击 “Switch to Flash-mode”。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -178,12 +176,9 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Option B) If you don’t have access to Windows Phone or if your phone is not detected, go to 
-                        the “Manual mode” tab, and click “interrupt the boot-process”. Then do a soft reboot on your 
-                        phone: Keep holding the volume – and power button at the same time until your phone shuts 
-                        down and vibrates. WPInternals should now detect your phone, and you should already be in 
-                        flash mode. If you aren't you will be able to choose “Switch to Flash-mode” in the 
-                        “Manual mode” tab.
+                        情况 B：如果手机没有启动到 Windows Phone 或设备未被识别， 请前往 “Manual mode” 选项卡并点击 “interrupt the boot-process”，并将手机软重启（同时按住音量减和电源键， 直至屏幕熄灭并振动。）
+                        此时手机应该已经进入 Flash Mode 并可被 WPInternals 识别。
+                        如果没有进入，请点击 “Manual mode” 选项卡下的 “Switch to Flash-mode” 。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -202,22 +197,21 @@
                 </r-cell>
             </r-grid>
             <p style="margin-top: 10%;">
-                Now <strong>CLOSE WPInternals</strong>. It needs to be closed, or the next steps will fail for sure. This is 
-                important, so don’t leave it running. 
+                现在 <strong>关闭</strong> WPInternals。这一步很重要，如果不关闭，接下来的步骤一定会出问题。
             </p>
-            <h2 style="margin-top: 30%;">Flashing the FFU file</h2>
+            <h2 style="margin-top: 30%;">刷入 FFU 文件</h2>
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Navigate to 
+                        导航到
                     </p>
                     <code>
-                        [Your drive letter]:\Program Files (x86)\Microsoft Care Suite\Windows Device Recovery Tool
+                        [你的系统盘盘符]:\Program Files (x86)\Microsoft Care Suite\Windows Device Recovery Tool
                     </code>
                     <p>
-                        If you don’t have these folders, you’ll need to download and install 
-                        <a href="https://support.microsoft.com/en-us/windows/windows-device-recovery-tool-faq-2b186f06-7178-ed11-4cb6-5ed437f0855b">Windows Device Recovery Tool</a>. 
-                        Once you open that folder, click into the address bar, write “cmd” and press enter. 
+                        如果找不到此文件夹，则你需要下载安装
+                        <a href="https://support.microsoft.com/en-us/windows/windows-device-recovery-tool-faq-2b186f06-7178-ed11-4cb6-5ed437f0855b">Windows Device Recovery Tool</a>。
+                        打开此文件夹后，在地址栏中输入“cmd“并回车。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -238,7 +232,7 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        You’ll get a terminal window, and it will look something like this:
+                        命令提示符窗口将会打开，如图所示：
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -259,14 +253,13 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Now run this command, replacing “path_to_your_ffu” with the path to the ffu 
-                        you’ve downloaded:
+                        输入以下命令，将 “path_to_your_ffu” 替换成你所下载的 FFU 文件的具体路径（如果放在同一目录下，则只需要替换为文件名）。
                     </p>
                     <code>
                         thor2 -mode uefiflash -ffufile path_to_your_ffu.ffu -erase_data
                     </code>
                     <p>
-                        In my case, it looks like this:
+                        如图所示：
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -287,21 +280,16 @@
             <r-grid columns=2>
                 <r-cell span-s=row>
                     <p>
-                        Press enter on your keyboard, your phone will turn red, a progress bar will 
-                        appear, and things will start to get done automatically. Wait until the 
-                        percentages output on the cmd window reach 100 and your phone screen will turn 
-                        green. Now run this second command:
+                        回车运行命令，你的手机会显示红底进度条界面并开始自动刷入文件。等到命令提示符窗口输出的进度为 100% 且手机转为显示绿底界面时，运行以下命令：
                     </p>
                     <code>
                         thor2 -mode rnd -reboot
                     </code>
                     <p>
-                        Like this:
-                        Press enter, and you'll boot right into Windows on ARM.
+                        回车运行，手机即会启动 Windows on ARM。
                     </p>
                     <p>
-                        You can also manually reset your device (keep the power button pressed until it reboots) 
-                        but make sure that flashing is done and the phone screen is green.
+                        你也可以选择手动重启（按住电源键直至其重启并振动）但要确保已经刷入完成且手机显示绿底界面。
                     </p>
                 </r-cell>
                 <r-cell span-s=row>
@@ -321,9 +309,9 @@
             </r-grid>
             <div class="expander">
                 <input id="expander" class="toggle" type="checkbox">
-                <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>I'm getting a PARTITON_NOT_FOUND error</label>
+                <label for="expander" class="toggle-label"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>我遇到了 PARTITON_NOT_FOUND 错误</label>
                 <div class="expander-content">
-                    <p>Instead of said command, run</p>
+                    <p>换用以下命令刷入 FFU 文件：</p>
                     <code>
                         thor2 -mode uefiflash -ffufile path_to_your_ffu.ffu
                     </code>
@@ -353,7 +341,7 @@
                 <input id="expander2" class="toggle2" type="checkbox">
                 <label for="expander2" class="toggle-label2"><i class="ms-Icon smdl2 ms-Icon--ChevronDownMed" aria-hidden="true"></i>I'm getting a THOR2_ERROR_TO_COMMUNICATE_WITH_DEVICE error</label>
                 <div class="expander-content2">
-                    <p>Told you before! You <strong>need</strong> to close WPInternals :)</p>
+                    <p>前面说了，你 <strong>必须</strong> 关闭 WPInternals！</p>
                 </div>
                 <style>
                     .expander2 {
